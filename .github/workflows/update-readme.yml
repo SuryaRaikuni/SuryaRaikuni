@@ -20,7 +20,6 @@ jobs:
         uses: Readme-Workflows/recent-activity@main
         with:
           GH_USERNAME: SuryaRaikuni
-          MAX_LINES: 5
 
       - name: Commit changes
         run: |
