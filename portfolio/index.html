@@ -3,188 +3,197 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Surya Raikuni | Full Stack & Backend Developer</title>
-  <meta name="description" content="Portfolio of Surya Raikuni – Full Stack & Backend Developer specializing in scalable backend systems, IoT, and interactive web apps.">
+  <title>Surya Raikuni — Full Stack Developer</title>
+  <meta name="description" content="Surya Raikuni – Full Stack & Backend Developer. CSE Student building scalable systems, IoT projects, and interactive web apps.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- ── NAVBAR ── -->
   <nav id="navbar">
-    <div class="nav-container">
-      <span class="nav-logo">Surya<span class="accent">.</span></span>
+    <div class="nav-inner">
+      <a href="#home" class="logo">SR<span class="dot">.</span></a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="hero" id="home">
-    <div class="hero-content">
-      <p class="hero-tag">👋 Hello, I'm</p>
-      <h1 class="hero-name">Surya Raikuni</h1>
-      <h2 class="hero-role">Full Stack &amp; Backend Developer</h2>
-      <p class="hero-sub">CSE Student building <strong>scalable backend systems</strong>, <strong>interactive web apps</strong>, and <strong>IoT hardware projects</strong>.</p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#contact" class="btn-outline">Get In Touch</a>
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-noise"></div>
+    <div class="container hero-container">
+      <div class="hero-badge">👋 Available for opportunities</div>
+      <h1 class="hero-title">Surya<br><span class="gradient-text">Raikuni</span></h1>
+      <p class="hero-role">Full Stack &amp; Backend Developer</p>
+      <p class="hero-desc">
+        CSE student building <strong>scalable REST APIs</strong>, <strong>full-stack web apps</strong>,
+        and <strong>hardware-integrated IoT systems</strong> with Arduino &amp; ESP32.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
       </div>
-    </div>
-    <div class="hero-glow"></div>
-  </header>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-grid">
-        <div class="about-image-wrap">
-          <img src="../assets/profile.jpg" alt="Surya Raikuni" class="profile-img">
-          <div class="img-glow"></div>
-        </div>
-        <div class="about-text">
-          <p>I'm a <strong>Full Stack &amp; Backend Developer</strong> and CSE student with a strong passion for building systems that are both powerful and elegant.</p>
-          <p>I specialize in designing <strong>REST APIs</strong>, architecting robust backend systems, and integrating hardware with software through <strong>IoT projects</strong> using Arduino and ESP32.</p>
-          <p>Currently, I'm deepening my expertise in <strong>System Design</strong>, strengthening my <strong>DSA fundamentals</strong> for interviews, and transitioning into full-stack development.</p>
-          <div class="about-highlights">
-            <div class="highlight-item">
-              <span class="highlight-icon">💻</span>
-              <span>Scalable backend &amp; web apps</span>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-icon">🤖</span>
-              <span>IoT + Hardware (Arduino, ESP32)</span>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-icon">🧠</span>
-              <span>System Design, APIs &amp; Automation</span>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-icon">⚡</span>
-              <span>Transitioning into Full Stack Dev</span>
-            </div>
-          </div>
-        </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span></span>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills">
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title">Tech Stack</h2>
+      <div class="about-grid">
+
+        <div class="about-img-col">
+          <div class="about-img-frame">
+            <img src="../assets/profile.jpg" alt="Surya Raikuni" loading="lazy">
+          </div>
+          <div class="stat-pills">
+            <div class="stat-pill">
+              <strong>CSE</strong>
+              <span>Student</span>
+            </div>
+            <div class="stat-pill">
+              <strong>4+</strong>
+              <span>Projects</span>
+            </div>
+            <div class="stat-pill">
+              <strong>Full</strong>
+              <span>Stack</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <p class="label">About Me</p>
+          <h2 class="section-heading">I build systems,<br>not just projects.</h2>
+          <p class="body-text">I'm a passionate Full Stack &amp; Backend Developer with a strong foundation in designing robust APIs, building end-to-end web applications, and integrating hardware with software.</p>
+          <p class="body-text">My work spans from web servers and databases to servo-controlled robots — I love solving complex engineering problems with clean, purposeful code.</p>
+          <div class="tags">
+            <span>REST APIs</span>
+            <span>System Design</span>
+            <span>IoT / Arduino</span>
+            <span>React &amp; Next.js</span>
+            <span>Flask / FastAPI</span>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/SuryaRaikuni" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/surya-pratap-singh-raikuni/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:suryaraikuni@gmail.com" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="label text-center">What I Work With</p>
+      <h2 class="section-heading text-center">Tech Stack</h2>
       <div class="skills-grid">
-        <div class="skill-card">
+        <div class="skill-card" data-delay="0">
           <div class="skill-icon">🎨</div>
           <h3>Frontend</h3>
-          <ul>
-            <li>HTML &amp; CSS</li>
-            <li>JavaScript</li>
-            <li>React.js / Next.js</li>
-            <li>Bootstrap 5</li>
-          </ul>
+          <ul><li>HTML &amp; CSS</li><li>JavaScript (ES6+)</li><li>React.js / Next.js</li><li>Bootstrap 5</li></ul>
         </div>
-        <div class="skill-card">
+        <div class="skill-card" data-delay="100">
           <div class="skill-icon">⚙️</div>
           <h3>Backend</h3>
-          <ul>
-            <li>Node.js &amp; Express</li>
-            <li>Python (Flask / FastAPI)</li>
-            <li>REST API Design</li>
-            <li>Authentication &amp; Security</li>
-          </ul>
+          <ul><li>Python — Flask / FastAPI</li><li>Node.js &amp; Express</li><li>REST API Design</li><li>Auth &amp; Security</li></ul>
         </div>
-        <div class="skill-card">
+        <div class="skill-card" data-delay="200">
           <div class="skill-icon">🗄️</div>
           <h3>Database</h3>
-          <ul>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-          </ul>
+          <ul><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li></ul>
         </div>
-        <div class="skill-card">
+        <div class="skill-card" data-delay="300">
           <div class="skill-icon">🔧</div>
           <h3>Tools &amp; Hardware</h3>
-          <ul>
-            <li>Git &amp; GitHub</li>
-            <li>Docker (learning)</li>
-            <li>Linux</li>
-            <li>Arduino &amp; ESP32</li>
-          </ul>
+          <ul><li>Git &amp; GitHub</li><li>Linux / Docker</li><li>Arduino &amp; ESP32</li><li>Servo &amp; Sensor Modules</li></ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="section">
     <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
+      <p class="label text-center">What I've Built</p>
+      <h2 class="section-heading text-center">Featured Projects</h2>
       <div class="projects-grid">
 
-        <!-- Project 1 -->
-        <article class="card">
-          <div class="card-img-wrap">
-            <img src="../assets/gesture.png" alt="Gesture Controlled Robotic Hand" class="card-image">
-            <div class="card-tag">IoT + CV</div>
+        <article class="project-card" data-delay="0">
+          <div class="project-img">
+            <img src="../assets/gesture.png" alt="Gesture Controlled Robotic Hand" loading="lazy">
+            <span class="project-tag">IoT + CV</span>
           </div>
-          <div class="card-content">
+          <div class="project-body">
             <h3>Gesture Controlled Robotic Hand</h3>
-            <p>Real-time hand tracking using computer vision to control servo motors via Arduino. Integrated a web interface for remote control and monitoring.</p>
-            <div class="card-stack">
+            <p>Real-time hand tracking via computer vision to control a robotic hand's servo motors through Arduino. Includes a live web interface for remote monitoring.</p>
+            <div class="project-stack">
               <span>Python</span><span>OpenCV</span><span>Arduino</span><span>Flask</span>
             </div>
           </div>
         </article>
 
-        <!-- Project 2 -->
-        <article class="card">
-          <div class="card-img-wrap">
-            <img src="../assets/banking.png" alt="Mini Core Banking System" class="card-image">
-            <div class="card-tag">Full Stack</div>
+        <article class="project-card" data-delay="100">
+          <div class="project-img">
+            <img src="../assets/banking.png" alt="Mini Core Banking System" loading="lazy">
+            <span class="project-tag">Full Stack</span>
           </div>
-          <div class="card-content">
+          <div class="project-body">
             <h3>Mini Core Banking System</h3>
-            <p>Full-stack banking application with Customer, Account &amp; Branch CRUD, secure transactions, an admin dashboard, and a responsive Bootstrap 5 UI.</p>
-            <div class="card-stack">
+            <p>Full-stack banking app with Customer, Account &amp; Branch management, secure transactions, role-based permissions, and a polished admin dashboard.</p>
+            <div class="project-stack">
               <span>Flask</span><span>PostgreSQL</span><span>Bootstrap 5</span>
             </div>
           </div>
         </article>
 
-        <!-- Project 3 -->
-        <article class="card">
-          <div class="card-img-wrap card-img-placeholder">
-            <div class="placeholder-icon">🕷️</div>
-            <div class="card-tag">Robotics</div>
+        <article class="project-card" data-delay="200">
+          <div class="project-img">
+            <img src="../assets/spider_quadbot.png" alt="Spider Quadbot" loading="lazy">
+            <span class="project-tag">Robotics</span>
           </div>
-          <div class="card-content">
+          <div class="project-body">
             <h3>Spider Quadbot</h3>
-            <p>12-servo robotic system with Bluetooth control, featuring complex inverse kinematics for stable movement across various terrains.</p>
-            <div class="card-stack">
-              <span>Arduino</span><span>C++</span><span>Bluetooth</span><span>Servo</span>
+            <p>A 12-servo robotic spider with Bluetooth control. Implements inverse kinematics for stable, terrain-adaptive movement across all four legs simultaneously.</p>
+            <div class="project-stack">
+              <span>Arduino</span><span>C++</span><span>Bluetooth HC-05</span>
             </div>
           </div>
         </article>
 
-        <!-- Project 4 -->
-        <article class="card">
-          <div class="card-img-wrap card-img-placeholder">
-            <div class="placeholder-icon">🌐</div>
-            <div class="card-tag">Backend</div>
+        <article class="project-card" data-delay="300">
+          <div class="project-img">
+            <img src="../assets/web_dashboard.png" alt="Web Control Dashboard" loading="lazy">
+            <span class="project-tag">Backend</span>
           </div>
-          <div class="card-content">
+          <div class="project-body">
             <h3>Web Control Dashboard</h3>
-            <p>Real-time control panel for hardware systems, built using modern frontend + backend integration, allowing remote monitoring and management.</p>
-            <div class="card-stack">
-              <span>Node.js</span><span>Express</span><span>WebSocket</span><span>React</span>
+            <p>Real-time hardware control panel built with WebSocket communication. Monitor sensor feeds, issue commands, and visualize live data from connected IoT devices.</p>
+            <div class="project-stack">
+              <span>Node.js</span><span>WebSocket</span><span>React</span><span>Express</span>
             </div>
           </div>
         </article>
@@ -193,70 +202,79 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title">Let's Connect</h2>
-      <p class="contact-sub">I'm open to collaborations, projects, and opportunities. Feel free to reach out!</p>
-      <div class="contact-cards">
-        <a href="https://github.com/SuryaRaikuni" target="_blank" rel="noopener" class="contact-card" id="github-link">
-          <span class="contact-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
-          </span>
-          <span class="contact-card-label">GitHub</span>
-          <span class="contact-card-value">@SuryaRaikuni</span>
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-container">
+      <p class="label text-center">Get In Touch</p>
+      <h2 class="section-heading text-center">Let's Work Together</h2>
+      <p class="contact-desc">I'm open to collaborations, internships, and freelance projects. Reach out through any of these channels.</p>
+      <div class="contact-grid">
+        <a href="https://github.com/SuryaRaikuni" target="_blank" rel="noopener" class="contact-card" id="github-contact">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+          </div>
+          <div class="contact-info">
+            <strong>GitHub</strong>
+            <span>@SuryaRaikuni</span>
+          </div>
+          <div class="contact-arrow">→</div>
         </a>
-        <a href="https://www.linkedin.com/in/surya-pratap-singh-raikuni/" target="_blank" rel="noopener" class="contact-card" id="linkedin-link">
-          <span class="contact-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </span>
-          <span class="contact-card-label">LinkedIn</span>
-          <span class="contact-card-value">Surya Pratap Singh Raikuni</span>
+        <a href="https://www.linkedin.com/in/surya-pratap-singh-raikuni/" target="_blank" rel="noopener" class="contact-card" id="linkedin-contact">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div class="contact-info">
+            <strong>LinkedIn</strong>
+            <span>Surya Pratap Singh Raikuni</span>
+          </div>
+          <div class="contact-arrow">→</div>
         </a>
-        <a href="mailto:suryaraikuni@gmail.com" class="contact-card" id="email-link">
-          <span class="contact-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          </span>
-          <span class="contact-card-label">Email</span>
-          <span class="contact-card-value">suryaraikuni@gmail.com</span>
+        <a href="mailto:suryaraikuni@gmail.com" class="contact-card" id="email-contact">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div class="contact-info">
+            <strong>Email</strong>
+            <span>suryaraikuni@gmail.com</span>
+          </div>
+          <div class="contact-arrow">→</div>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ── FOOTER ── -->
   <footer>
-    <p>⚡ "I don't just build projects, I build systems." — Surya Raikuni</p>
-    <p class="footer-copy">&copy; 2026 Surya Raikuni. All rights reserved.</p>
+    <div class="container footer-inner">
+      <span class="logo">SR<span class="dot">.</span></span>
+      <p>"I don't just build projects — I build systems."</p>
+      <p class="footer-copy">&copy; 2026 Surya Raikuni</p>
+    </div>
   </footer>
 
   <script>
-    // Navbar scroll effect
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 50);
-    });
+    // Navbar shrink on scroll
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
 
-    // Smooth scroll for nav links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
+    // Mobile hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
     });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+    }));
 
-    // Intersection Observer for scroll animations
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.project-card, .skill-card, .contact-card, .about-grid');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
     }, { threshold: 0.1 });
-
-    document.querySelectorAll('.card, .skill-card, .about-grid, .contact-card').forEach(el => {
-      el.classList.add('fade-in');
-      observer.observe(el);
-    });
+    reveals.forEach(el => { el.classList.add('reveal'); io.observe(el); });
   </script>
-
 </body>
 </html>
