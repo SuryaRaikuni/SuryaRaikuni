@@ -3,54 +3,260 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Surya | Full Stack Developer</title>
-  <meta name="description" content="Portfolio of Surya - Full Stack & Backend Developer specializing in scalable systems and interactive web apps.">
+  <title>Surya Raikuni | Full Stack & Backend Developer</title>
+  <meta name="description" content="Portfolio of Surya Raikuni – Full Stack & Backend Developer specializing in scalable backend systems, IoT, and interactive web apps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Surya</h1>
-    <p>Full Stack & Backend Developer | CSE Student</p>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <span class="nav-logo">Surya<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tag">👋 Hello, I'm</p>
+      <h1 class="hero-name">Surya Raikuni</h1>
+      <h2 class="hero-role">Full Stack &amp; Backend Developer</h2>
+      <p class="hero-sub">CSE Student building <strong>scalable backend systems</strong>, <strong>interactive web apps</strong>, and <strong>IoT hardware projects</strong>.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-glow"></div>
   </header>
 
-  <main>
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <img src="../assets/profile.jpg" alt="Surya Raikuni" class="profile-img">
+          <div class="img-glow"></div>
+        </div>
+        <div class="about-text">
+          <p>I'm a <strong>Full Stack &amp; Backend Developer</strong> and CSE student with a strong passion for building systems that are both powerful and elegant.</p>
+          <p>I specialize in designing <strong>REST APIs</strong>, architecting robust backend systems, and integrating hardware with software through <strong>IoT projects</strong> using Arduino and ESP32.</p>
+          <p>Currently, I'm deepening my expertise in <strong>System Design</strong>, strengthening my <strong>DSA fundamentals</strong> for interviews, and transitioning into full-stack development.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">💻</span>
+              <span>Scalable backend &amp; web apps</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🤖</span>
+              <span>IoT + Hardware (Arduino, ESP32)</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🧠</span>
+              <span>System Design, APIs &amp; Automation</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">⚡</span>
+              <span>Transitioning into Full Stack Dev</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript</li>
+            <li>React.js / Next.js</li>
+            <li>Bootstrap 5</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js &amp; Express</li>
+            <li>Python (Flask / FastAPI)</li>
+            <li>REST API Design</li>
+            <li>Authentication &amp; Security</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>Database</h3>
+          <ul>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔧</div>
+          <h3>Tools &amp; Hardware</h3>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>Docker (learning)</li>
+            <li>Linux</li>
+            <li>Arduino &amp; ESP32</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
       <div class="projects-grid">
+
         <!-- Project 1 -->
         <article class="card">
-          <img src="../assets/gesture.png" alt="Gesture Controlled Robotic Hand" class="card-image">
+          <div class="card-img-wrap">
+            <img src="../assets/gesture.png" alt="Gesture Controlled Robotic Hand" class="card-image">
+            <div class="card-tag">IoT + CV</div>
+          </div>
           <div class="card-content">
-            <h3>Gesture Controlled Hand</h3>
-            <p>A sophisticated computer vision + Arduino based system that tracks hand gestures in real-time to control a robotic hand.</p>
+            <h3>Gesture Controlled Robotic Hand</h3>
+            <p>Real-time hand tracking using computer vision to control servo motors via Arduino. Integrated a web interface for remote control and monitoring.</p>
+            <div class="card-stack">
+              <span>Python</span><span>OpenCV</span><span>Arduino</span><span>Flask</span>
+            </div>
           </div>
         </article>
 
         <!-- Project 2 -->
         <article class="card">
-          <img src="../assets/banking.png" alt="Mini Core Banking System" class="card-image">
+          <div class="card-img-wrap">
+            <img src="../assets/banking.png" alt="Mini Core Banking System" class="card-image">
+            <div class="card-tag">Full Stack</div>
+          </div>
           <div class="card-content">
             <h3>Mini Core Banking System</h3>
-            <p>Full-stack banking application built with Flask and PostgreSQL. Features secure transactions, account management, and an admin dashboard.</p>
+            <p>Full-stack banking application with Customer, Account &amp; Branch CRUD, secure transactions, an admin dashboard, and a responsive Bootstrap 5 UI.</p>
+            <div class="card-stack">
+              <span>Flask</span><span>PostgreSQL</span><span>Bootstrap 5</span>
+            </div>
           </div>
         </article>
 
         <!-- Project 3 -->
         <article class="card">
+          <div class="card-img-wrap card-img-placeholder">
+            <div class="placeholder-icon">🕷️</div>
+            <div class="card-tag">Robotics</div>
+          </div>
           <div class="card-content">
             <h3>Spider Quadbot</h3>
             <p>12-servo robotic system with Bluetooth control, featuring complex inverse kinematics for stable movement across various terrains.</p>
+            <div class="card-stack">
+              <span>Arduino</span><span>C++</span><span>Bluetooth</span><span>Servo</span>
+            </div>
           </div>
         </article>
-      </div>
-    </section>
-  </main>
 
+        <!-- Project 4 -->
+        <article class="card">
+          <div class="card-img-wrap card-img-placeholder">
+            <div class="placeholder-icon">🌐</div>
+            <div class="card-tag">Backend</div>
+          </div>
+          <div class="card-content">
+            <h3>Web Control Dashboard</h3>
+            <p>Real-time control panel for hardware systems, built using modern frontend + backend integration, allowing remote monitoring and management.</p>
+            <div class="card-stack">
+              <span>Node.js</span><span>Express</span><span>WebSocket</span><span>React</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-sub">I'm open to collaborations, projects, and opportunities. Feel free to reach out!</p>
+      <div class="contact-cards">
+        <a href="https://github.com/SuryaRaikuni" target="_blank" rel="noopener" class="contact-card" id="github-link">
+          <span class="contact-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+          </span>
+          <span class="contact-card-label">GitHub</span>
+          <span class="contact-card-value">@SuryaRaikuni</span>
+        </a>
+        <a href="https://www.linkedin.com/in/surya-pratap-singh-raikuni/" target="_blank" rel="noopener" class="contact-card" id="linkedin-link">
+          <span class="contact-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </span>
+          <span class="contact-card-label">LinkedIn</span>
+          <span class="contact-card-value">Surya Pratap Singh Raikuni</span>
+        </a>
+        <a href="mailto:suryaraikuni@gmail.com" class="contact-card" id="email-link">
+          <span class="contact-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </span>
+          <span class="contact-card-label">Email</span>
+          <span class="contact-card-value">suryaraikuni@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2026 Surya. Built with passion for technology.</p>
+    <p>⚡ "I don't just build projects, I build systems." — Surya Raikuni</p>
+    <p class="footer-copy">&copy; 2026 Surya Raikuni. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card, .skill-card, .about-grid, .contact-card').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
 
 </body>
 </html>
