@@ -2,7 +2,7 @@
 <h3 align="center">Backend Developer & Cybersecurity Enthusiast | CSE Student</h3>
 
 <p align="center">
-  <a href="https://suryaraikuni.github.io/SuryaRaikuni/portfolio/index.html">Resume</a> •
+  <a href="https://suryaraikuni.github.io/SuryaRaikuni/portfolio/index.html">Portfolio</a> •
   <a href="https://www.linkedin.com/in/surya-pratap-singh-raikuni/">LinkedIn</a> •
   <a href="mailto: suryaraikuni@gmail.com">Email</a>
 </p>
