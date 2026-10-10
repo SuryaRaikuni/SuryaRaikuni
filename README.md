@@ -10,7 +10,7 @@
 ---
 
 ## 🚀 About Me
-- 🛡️ Building **unsupervised Network Intrusion Detection Systems (NIDS)** using deep autoencoders
+- 🛡️ Building **end-to-end intelligent water resource monitoring system AQUAIQ** with decision support
 - 🤖 Passionate about **ML-powered cybersecurity** — detecting DDoS, port scans & brute-force attacks
 - ⚡ Strong in **Python backend systems** (Flask, FastAPI, PyTorch, Scapy)
 - 🧠 Interested in **Cybersecurity, System Design, and Anomaly Detection**
